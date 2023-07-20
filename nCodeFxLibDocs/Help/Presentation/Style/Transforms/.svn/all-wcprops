@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/dev/!svn/ver/50/Active/nCodeFx/nCodeFxLibDocs/Help/Presentation/Style/Transforms
+END
+skeleton_conceptual.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/dev/!svn/ver/50/Active/nCodeFx/nCodeFxLibDocs/Help/Presentation/Style/Transforms/skeleton_conceptual.xml
+END
+utilities_metadata.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/dev/!svn/ver/50/Active/nCodeFx/nCodeFxLibDocs/Help/Presentation/Style/Transforms/utilities_metadata.xsl
+END
+web_reference.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/dev/!svn/ver/50/Active/nCodeFx/nCodeFxLibDocs/Help/Presentation/Style/Transforms/web_reference.xsl
+END
+utilities_dduexml.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/dev/!svn/ver/50/Active/nCodeFx/nCodeFxLibDocs/Help/Presentation/Style/Transforms/utilities_dduexml.xsl
+END
+skeleton.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/dev/!svn/ver/50/Active/nCodeFx/nCodeFxLibDocs/Help/Presentation/Style/Transforms/skeleton.xml
+END
+globalTemplates.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/dev/!svn/ver/50/Active/nCodeFx/nCodeFxLibDocs/Help/Presentation/Style/Transforms/globalTemplates.xsl
+END
+seeAlsoSection.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/dev/!svn/ver/50/Active/nCodeFx/nCodeFxLibDocs/Help/Presentation/Style/Transforms/seeAlsoSection.xsl
+END
+main_conceptual.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/dev/!svn/ver/50/Active/nCodeFx/nCodeFxLibDocs/Help/Presentation/Style/Transforms/main_conceptual.xsl
+END
+htmlBody.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/dev/!svn/ver/50/Active/nCodeFx/nCodeFxLibDocs/Help/Presentation/Style/Transforms/htmlBody.xsl
+END
+main_reference.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/dev/!svn/ver/50/Active/nCodeFx/nCodeFxLibDocs/Help/Presentation/Style/Transforms/main_reference.xsl
+END
+main_sandcastle.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/dev/!svn/ver/50/Active/nCodeFx/nCodeFxLibDocs/Help/Presentation/Style/Transforms/main_sandcastle.xsl
+END
+xamlSyntax.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/dev/!svn/ver/50/Active/nCodeFx/nCodeFxLibDocs/Help/Presentation/Style/Transforms/xamlSyntax.xsl
+END
+utilities_reference.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/dev/!svn/ver/50/Active/nCodeFx/nCodeFxLibDocs/Help/Presentation/Style/Transforms/utilities_reference.xsl
+END

@@ -1,0 +1,3385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<reflection>
+  <assemblies>
+    <assembly name="nCodeFxLib">
+      <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+      <attributes>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyConfigurationAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value />
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyCompanyAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value />
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyCopyrightAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>Copyright ©  2008</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyTitleAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>nCodeFxLib</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyDescriptionAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value />
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Runtime.InteropServices.ComVisibleAttribute" ref="true" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyProductAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>nCodeFxLib</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyTrademarkAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value />
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Runtime.InteropServices.GuidAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>c6b9d68c-7d6a-4224-a662-2db587fc159b</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyFileVersionAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>1.0.0.0</value>
+          </argument>
+        </attribute>
+      </attributes>
+    </assembly>
+  </assemblies>
+  <apis>
+    <api id="N:nCodeFxLib">
+      <apidata name="nCodeFxLib" group="namespace" />
+      <elements>
+        <element api="T:nCodeFxLib.ColorHelper" />
+        <element api="T:nCodeFxLib.ShadeEffect" />
+        <element api="T:nCodeFxLib.ColorizeEffect" />
+        <element api="T:nCodeFxLib.DesaturationEffect" />
+      </elements>
+    </api>
+    <api id="T:nCodeFxLib.ColorHelper">
+      <apidata name="ColorHelper" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="true" sealed="true" serializable="false" layout="auto" format="ansi" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:nCodeFxLib.ColorHelper.GetColorNames" />
+      </elements>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+      </containers>
+    </api>
+    <api id="M:nCodeFxLib.ColorHelper.GetColorNames">
+      <apidata name="GetColorNames" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <returns>
+        <type api="T:System.Collections.Generic.IEnumerable`1" ref="true">
+          <specialization>
+            <type api="T:System.String" ref="true" />
+          </specialization>
+        </type>
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ColorHelper" ref="true" />
+      </containers>
+    </api>
+    <api id="T:nCodeFxLib.ColorizeEffect">
+      <apidata name="ColorizeEffect" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" layout="auto" format="ansi" />
+      <family>
+        <ancestors>
+          <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          <type api="T:System.Windows.Media.Effects.Effect" ref="true" />
+          <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          <type api="T:System.Windows.Freezable" ref="true" />
+          <type api="T:System.Windows.DependencyObject" ref="true" />
+          <type api="T:System.Windows.Threading.DispatcherObject" ref="true" />
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="F:nCodeFxLib.ColorizeEffect.InputProperty" />
+        <element api="F:nCodeFxLib.ColorizeEffect.ColorProperty" />
+        <element api="F:nCodeFxLib.ColorizeEffect.IgnoreOpacityProperty" />
+        <element api="F:nCodeFxLib.ColorizeEffect.IgnoredOpacityValueProperty" />
+        <element api="M:nCodeFxLib.ColorizeEffect.#ctor" />
+        <element api="P:nCodeFxLib.ColorizeEffect.Input" />
+        <element api="P:nCodeFxLib.ColorizeEffect.Color" />
+        <element api="P:nCodeFxLib.ColorizeEffect.IgnoreOpacity" />
+        <element api="P:nCodeFxLib.ColorizeEffect.IgnoredOpacityValue" />
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.UpdateShaderValue(System.Windows.DependencyProperty)">
+          <apidata name="UpdateShaderValue" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.CloneCore(System.Windows.Freezable)">
+          <apidata name="CloneCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.CloneCore(System.Windows.Freezable)">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="sourceFreezable">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.CloneCurrentValueCore(System.Windows.Freezable)">
+          <apidata name="CloneCurrentValueCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="sourceFreezable">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.GetAsFrozenCore(System.Windows.Freezable)">
+          <apidata name="GetAsFrozenCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.GetAsFrozenCore(System.Windows.Freezable)">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="sourceFreezable">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.GetCurrentValueAsFrozenCore(System.Windows.Freezable)">
+          <apidata name="GetCurrentValueAsFrozenCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.GetCurrentValueAsFrozenCore(System.Windows.Freezable)">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="sourceFreezable">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.Clone">
+          <apidata name="Clone" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.CloneCurrentValue">
+          <apidata name="CloneCurrentValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.CreateInstanceCore">
+          <apidata name="CreateInstanceCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.CreateInstanceCore">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <returns>
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.PaddingTop">
+          <apidata name="PaddingTop" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_PaddingTop" />
+          <setter name="set_PaddingTop" />
+          <returns>
+            <type api="T:System.Double" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.PaddingBottom">
+          <apidata name="PaddingBottom" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_PaddingBottom" />
+          <setter name="set_PaddingBottom" />
+          <returns>
+            <type api="T:System.Double" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.PaddingLeft">
+          <apidata name="PaddingLeft" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_PaddingLeft" />
+          <setter name="set_PaddingLeft" />
+          <returns>
+            <type api="T:System.Double" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.PaddingRight">
+          <apidata name="PaddingRight" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_PaddingRight" />
+          <setter name="set_PaddingRight" />
+          <returns>
+            <type api="T:System.Double" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.DdxUvDdyUvRegisterIndex">
+          <apidata name="DdxUvDdyUvRegisterIndex" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_DdxUvDdyUvRegisterIndex" />
+          <setter name="set_DdxUvDdyUvRegisterIndex" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.PixelShader">
+          <apidata name="PixelShader" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_PixelShader" />
+          <setter name="set_PixelShader" />
+          <returns>
+            <type api="T:System.Windows.Media.Effects.PixelShader" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.Effect.EffectMapping">
+          <apidata name="EffectMapping" group="member" subgroup="property" />
+          <memberdata visibility="family or assembly" />
+          <proceduredata virtual="true" />
+          <propertydata get="true" />
+          <getter name="get_EffectMapping" />
+          <returns>
+            <type api="T:System.Windows.Media.GeneralTransform" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.Effect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.FreezeCore(System.Boolean)">
+          <apidata name="FreezeCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.FreezeCore(System.Boolean)">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="isChecking">
+              <type api="T:System.Boolean" ref="false" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock)">
+          <apidata name="ApplyAnimationClock" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+            <parameter name="clock">
+              <type api="T:System.Windows.Media.Animation.AnimationClock" ref="true" />
+            </parameter>
+          </parameters>
+          <implements>
+            <member api="M:System.Windows.Media.Animation.IAnimatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock)">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock,System.Windows.Media.Animation.HandoffBehavior)">
+          <apidata name="ApplyAnimationClock" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+            <parameter name="clock">
+              <type api="T:System.Windows.Media.Animation.AnimationClock" ref="true" />
+            </parameter>
+            <parameter name="handoffBehavior">
+              <type api="T:System.Windows.Media.Animation.HandoffBehavior" ref="false" />
+            </parameter>
+          </parameters>
+          <implements>
+            <member api="M:System.Windows.Media.Animation.IAnimatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock,System.Windows.Media.Animation.HandoffBehavior)">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline)">
+          <apidata name="BeginAnimation" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+            <parameter name="animation">
+              <type api="T:System.Windows.Media.Animation.AnimationTimeline" ref="true" />
+            </parameter>
+          </parameters>
+          <implements>
+            <member api="M:System.Windows.Media.Animation.IAnimatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline)">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline,System.Windows.Media.Animation.HandoffBehavior)">
+          <apidata name="BeginAnimation" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+            <parameter name="animation">
+              <type api="T:System.Windows.Media.Animation.AnimationTimeline" ref="true" />
+            </parameter>
+            <parameter name="handoffBehavior">
+              <type api="T:System.Windows.Media.Animation.HandoffBehavior" ref="false" />
+            </parameter>
+          </parameters>
+          <implements>
+            <member api="M:System.Windows.Media.Animation.IAnimatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline,System.Windows.Media.Animation.HandoffBehavior)">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.GetAnimationBaseValue(System.Windows.DependencyProperty)">
+          <apidata name="GetAnimationBaseValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <implements>
+            <member api="M:System.Windows.Media.Animation.IAnimatable.GetAnimationBaseValue(System.Windows.DependencyProperty)">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Animation.Animatable.HasAnimatedProperties">
+          <apidata name="HasAnimatedProperties" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <propertydata get="true" />
+          <getter name="get_HasAnimatedProperties" />
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <implements>
+            <member api="P:System.Windows.Media.Animation.IAnimatable.HasAnimatedProperties">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.GetAsFrozen">
+          <apidata name="GetAsFrozen" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.GetCurrentValueAsFrozen">
+          <apidata name="GetCurrentValueAsFrozen" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.Freeze">
+          <apidata name="Freeze" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+          <apidata name="OnPropertyChanged" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.DependencyObject.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+              <type api="T:System.Windows.DependencyObject" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="e">
+              <type api="T:System.Windows.DependencyPropertyChangedEventArgs" ref="false" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.CreateInstance">
+          <apidata name="CreateInstance" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.OnChanged">
+          <apidata name="OnChanged" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.ReadPreamble">
+          <apidata name="ReadPreamble" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.WritePreamble">
+          <apidata name="WritePreamble" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.WritePostscript">
+          <apidata name="WritePostscript" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.OnFreezablePropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)">
+          <apidata name="OnFreezablePropertyChanged" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="oldValue">
+              <type api="T:System.Windows.DependencyObject" ref="true" />
+            </parameter>
+            <parameter name="newValue">
+              <type api="T:System.Windows.DependencyObject" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.OnFreezablePropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyObject,System.Windows.DependencyProperty)">
+          <apidata name="OnFreezablePropertyChanged" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="oldValue">
+              <type api="T:System.Windows.DependencyObject" ref="true" />
+            </parameter>
+            <parameter name="newValue">
+              <type api="T:System.Windows.DependencyObject" ref="true" />
+            </parameter>
+            <parameter name="property">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Freezable.CanFreeze">
+          <apidata name="CanFreeze" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" />
+          <getter name="get_CanFreeze" />
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Freezable.IsFrozen">
+          <apidata name="IsFrozen" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" />
+          <getter name="get_IsFrozen" />
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="E:System.Windows.Freezable.Changed">
+          <apidata name="Changed" group="member" subgroup="event" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <eventdata add="true" remove="true" />
+          <adder name="add_Changed" />
+          <remover name="remove_Changed" />
+          <eventhandler>
+            <type api="T:System.EventHandler" ref="true" />
+          </eventhandler>
+          <eventargs>
+            <type api="T:System.EventArgs" ref="true" />
+          </eventargs>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <overrides>
+            <member api="M:System.Object.Equals(System.Object)">
+              <type api="T:System.Object" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <overrides>
+            <member api="M:System.Object.GetHashCode">
+              <type api="T:System.Object" ref="true" />
+            </member>
+          </overrides>
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.GetValue(System.Windows.DependencyProperty)">
+          <apidata name="GetValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.SetValue(System.Windows.DependencyProperty,System.Object)">
+          <apidata name="SetValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+            <parameter name="value">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.SetValue(System.Windows.DependencyPropertyKey,System.Object)">
+          <apidata name="SetValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="key">
+              <type api="T:System.Windows.DependencyPropertyKey" ref="true" />
+            </parameter>
+            <parameter name="value">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.ClearValue(System.Windows.DependencyProperty)">
+          <apidata name="ClearValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.ClearValue(System.Windows.DependencyPropertyKey)">
+          <apidata name="ClearValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="key">
+              <type api="T:System.Windows.DependencyPropertyKey" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.CoerceValue(System.Windows.DependencyProperty)">
+          <apidata name="CoerceValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.InvalidateProperty(System.Windows.DependencyProperty)">
+          <apidata name="InvalidateProperty" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.ShouldSerializeProperty(System.Windows.DependencyProperty)">
+          <apidata name="ShouldSerializeProperty" group="member" subgroup="method" />
+          <memberdata visibility="family or assembly" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.ReadLocalValue(System.Windows.DependencyProperty)">
+          <apidata name="ReadLocalValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.GetLocalValueEnumerator">
+          <apidata name="GetLocalValueEnumerator" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.LocalValueEnumerator" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.DependencyObject.DependencyObjectType">
+          <apidata name="DependencyObjectType" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" />
+          <getter name="get_DependencyObjectType" />
+          <returns>
+            <type api="T:System.Windows.DependencyObjectType" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.DependencyObject.IsSealed">
+          <apidata name="IsSealed" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" />
+          <getter name="get_IsSealed" />
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Threading.DispatcherObject.CheckAccess">
+          <apidata name="CheckAccess" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Threading" />
+            <type api="T:System.Windows.Threading.DispatcherObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Threading.DispatcherObject.VerifyAccess">
+          <apidata name="VerifyAccess" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Threading" />
+            <type api="T:System.Windows.Threading.DispatcherObject" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Threading.DispatcherObject.Dispatcher">
+          <apidata name="Dispatcher" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" />
+          <getter name="get_Dispatcher" />
+          <returns>
+            <type api="T:System.Windows.Threading.Dispatcher" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Threading" />
+            <type api="T:System.Windows.Threading.DispatcherObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+      </containers>
+    </api>
+    <api id="M:nCodeFxLib.ColorizeEffect.#ctor">
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ColorizeEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="P:nCodeFxLib.ColorizeEffect.Color">
+      <apidata name="Color" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Color" />
+      <setter name="set_Color" />
+      <returns>
+        <type api="T:System.Windows.Media.Color" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ColorizeEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="F:nCodeFxLib.ColorizeEffect.ColorProperty">
+      <apidata name="ColorProperty" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="false" initonly="true" serialized="true" />
+      <returns>
+        <type api="T:System.Windows.DependencyProperty" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ColorizeEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="P:nCodeFxLib.ColorizeEffect.IgnoredOpacityValue">
+      <apidata name="IgnoredOpacityValue" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_IgnoredOpacityValue" />
+      <setter name="set_IgnoredOpacityValue" />
+      <returns>
+        <type api="T:System.Single" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ColorizeEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="F:nCodeFxLib.ColorizeEffect.IgnoredOpacityValueProperty">
+      <apidata name="IgnoredOpacityValueProperty" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="false" initonly="true" serialized="true" />
+      <returns>
+        <type api="T:System.Windows.DependencyProperty" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ColorizeEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="P:nCodeFxLib.ColorizeEffect.IgnoreOpacity">
+      <apidata name="IgnoreOpacity" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_IgnoreOpacity" />
+      <setter name="set_IgnoreOpacity" />
+      <returns>
+        <type api="T:System.Single" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ColorizeEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="F:nCodeFxLib.ColorizeEffect.IgnoreOpacityProperty">
+      <apidata name="IgnoreOpacityProperty" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="false" initonly="true" serialized="true" />
+      <returns>
+        <type api="T:System.Windows.DependencyProperty" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ColorizeEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="P:nCodeFxLib.ColorizeEffect.Input">
+      <apidata name="Input" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Input" />
+      <setter name="set_Input" />
+      <returns>
+        <type api="T:System.Windows.Media.Brush" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ColorizeEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="F:nCodeFxLib.ColorizeEffect.InputProperty">
+      <apidata name="InputProperty" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="false" initonly="true" serialized="true" />
+      <returns>
+        <type api="T:System.Windows.DependencyProperty" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ColorizeEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="T:nCodeFxLib.DesaturationEffect">
+      <apidata name="DesaturationEffect" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" layout="auto" format="ansi" />
+      <family>
+        <ancestors>
+          <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          <type api="T:System.Windows.Media.Effects.Effect" ref="true" />
+          <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          <type api="T:System.Windows.Freezable" ref="true" />
+          <type api="T:System.Windows.DependencyObject" ref="true" />
+          <type api="T:System.Windows.Threading.DispatcherObject" ref="true" />
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="F:nCodeFxLib.DesaturationEffect.InputProperty" />
+        <element api="F:nCodeFxLib.DesaturationEffect.DesaturationProperty" />
+        <element api="F:nCodeFxLib.DesaturationEffect.IgnoreOpacityProperty" />
+        <element api="F:nCodeFxLib.DesaturationEffect.IgnoredOpacityValueProperty" />
+        <element api="M:nCodeFxLib.DesaturationEffect.#ctor" />
+        <element api="P:nCodeFxLib.DesaturationEffect.Input" />
+        <element api="P:nCodeFxLib.DesaturationEffect.Desaturation" />
+        <element api="P:nCodeFxLib.DesaturationEffect.IgnoreOpacity" />
+        <element api="P:nCodeFxLib.DesaturationEffect.IgnoredOpacityValue" />
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.UpdateShaderValue(System.Windows.DependencyProperty)">
+          <apidata name="UpdateShaderValue" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.CloneCore(System.Windows.Freezable)">
+          <apidata name="CloneCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.CloneCore(System.Windows.Freezable)">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="sourceFreezable">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.CloneCurrentValueCore(System.Windows.Freezable)">
+          <apidata name="CloneCurrentValueCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="sourceFreezable">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.GetAsFrozenCore(System.Windows.Freezable)">
+          <apidata name="GetAsFrozenCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.GetAsFrozenCore(System.Windows.Freezable)">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="sourceFreezable">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.GetCurrentValueAsFrozenCore(System.Windows.Freezable)">
+          <apidata name="GetCurrentValueAsFrozenCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.GetCurrentValueAsFrozenCore(System.Windows.Freezable)">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="sourceFreezable">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.Clone">
+          <apidata name="Clone" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.CloneCurrentValue">
+          <apidata name="CloneCurrentValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.CreateInstanceCore">
+          <apidata name="CreateInstanceCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.CreateInstanceCore">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <returns>
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.PaddingTop">
+          <apidata name="PaddingTop" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_PaddingTop" />
+          <setter name="set_PaddingTop" />
+          <returns>
+            <type api="T:System.Double" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.PaddingBottom">
+          <apidata name="PaddingBottom" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_PaddingBottom" />
+          <setter name="set_PaddingBottom" />
+          <returns>
+            <type api="T:System.Double" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.PaddingLeft">
+          <apidata name="PaddingLeft" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_PaddingLeft" />
+          <setter name="set_PaddingLeft" />
+          <returns>
+            <type api="T:System.Double" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.PaddingRight">
+          <apidata name="PaddingRight" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_PaddingRight" />
+          <setter name="set_PaddingRight" />
+          <returns>
+            <type api="T:System.Double" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.DdxUvDdyUvRegisterIndex">
+          <apidata name="DdxUvDdyUvRegisterIndex" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_DdxUvDdyUvRegisterIndex" />
+          <setter name="set_DdxUvDdyUvRegisterIndex" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.PixelShader">
+          <apidata name="PixelShader" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_PixelShader" />
+          <setter name="set_PixelShader" />
+          <returns>
+            <type api="T:System.Windows.Media.Effects.PixelShader" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.Effect.EffectMapping">
+          <apidata name="EffectMapping" group="member" subgroup="property" />
+          <memberdata visibility="family or assembly" />
+          <proceduredata virtual="true" />
+          <propertydata get="true" />
+          <getter name="get_EffectMapping" />
+          <returns>
+            <type api="T:System.Windows.Media.GeneralTransform" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.Effect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.FreezeCore(System.Boolean)">
+          <apidata name="FreezeCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.FreezeCore(System.Boolean)">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="isChecking">
+              <type api="T:System.Boolean" ref="false" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock)">
+          <apidata name="ApplyAnimationClock" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+            <parameter name="clock">
+              <type api="T:System.Windows.Media.Animation.AnimationClock" ref="true" />
+            </parameter>
+          </parameters>
+          <implements>
+            <member api="M:System.Windows.Media.Animation.IAnimatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock)">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock,System.Windows.Media.Animation.HandoffBehavior)">
+          <apidata name="ApplyAnimationClock" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+            <parameter name="clock">
+              <type api="T:System.Windows.Media.Animation.AnimationClock" ref="true" />
+            </parameter>
+            <parameter name="handoffBehavior">
+              <type api="T:System.Windows.Media.Animation.HandoffBehavior" ref="false" />
+            </parameter>
+          </parameters>
+          <implements>
+            <member api="M:System.Windows.Media.Animation.IAnimatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock,System.Windows.Media.Animation.HandoffBehavior)">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline)">
+          <apidata name="BeginAnimation" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+            <parameter name="animation">
+              <type api="T:System.Windows.Media.Animation.AnimationTimeline" ref="true" />
+            </parameter>
+          </parameters>
+          <implements>
+            <member api="M:System.Windows.Media.Animation.IAnimatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline)">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline,System.Windows.Media.Animation.HandoffBehavior)">
+          <apidata name="BeginAnimation" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+            <parameter name="animation">
+              <type api="T:System.Windows.Media.Animation.AnimationTimeline" ref="true" />
+            </parameter>
+            <parameter name="handoffBehavior">
+              <type api="T:System.Windows.Media.Animation.HandoffBehavior" ref="false" />
+            </parameter>
+          </parameters>
+          <implements>
+            <member api="M:System.Windows.Media.Animation.IAnimatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline,System.Windows.Media.Animation.HandoffBehavior)">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.GetAnimationBaseValue(System.Windows.DependencyProperty)">
+          <apidata name="GetAnimationBaseValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <implements>
+            <member api="M:System.Windows.Media.Animation.IAnimatable.GetAnimationBaseValue(System.Windows.DependencyProperty)">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Animation.Animatable.HasAnimatedProperties">
+          <apidata name="HasAnimatedProperties" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <propertydata get="true" />
+          <getter name="get_HasAnimatedProperties" />
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <implements>
+            <member api="P:System.Windows.Media.Animation.IAnimatable.HasAnimatedProperties">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.GetAsFrozen">
+          <apidata name="GetAsFrozen" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.GetCurrentValueAsFrozen">
+          <apidata name="GetCurrentValueAsFrozen" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.Freeze">
+          <apidata name="Freeze" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+          <apidata name="OnPropertyChanged" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.DependencyObject.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+              <type api="T:System.Windows.DependencyObject" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="e">
+              <type api="T:System.Windows.DependencyPropertyChangedEventArgs" ref="false" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.CreateInstance">
+          <apidata name="CreateInstance" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.OnChanged">
+          <apidata name="OnChanged" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.ReadPreamble">
+          <apidata name="ReadPreamble" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.WritePreamble">
+          <apidata name="WritePreamble" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.WritePostscript">
+          <apidata name="WritePostscript" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.OnFreezablePropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)">
+          <apidata name="OnFreezablePropertyChanged" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="oldValue">
+              <type api="T:System.Windows.DependencyObject" ref="true" />
+            </parameter>
+            <parameter name="newValue">
+              <type api="T:System.Windows.DependencyObject" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.OnFreezablePropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyObject,System.Windows.DependencyProperty)">
+          <apidata name="OnFreezablePropertyChanged" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="oldValue">
+              <type api="T:System.Windows.DependencyObject" ref="true" />
+            </parameter>
+            <parameter name="newValue">
+              <type api="T:System.Windows.DependencyObject" ref="true" />
+            </parameter>
+            <parameter name="property">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Freezable.CanFreeze">
+          <apidata name="CanFreeze" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" />
+          <getter name="get_CanFreeze" />
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Freezable.IsFrozen">
+          <apidata name="IsFrozen" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" />
+          <getter name="get_IsFrozen" />
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="E:System.Windows.Freezable.Changed">
+          <apidata name="Changed" group="member" subgroup="event" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <eventdata add="true" remove="true" />
+          <adder name="add_Changed" />
+          <remover name="remove_Changed" />
+          <eventhandler>
+            <type api="T:System.EventHandler" ref="true" />
+          </eventhandler>
+          <eventargs>
+            <type api="T:System.EventArgs" ref="true" />
+          </eventargs>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <overrides>
+            <member api="M:System.Object.Equals(System.Object)">
+              <type api="T:System.Object" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <overrides>
+            <member api="M:System.Object.GetHashCode">
+              <type api="T:System.Object" ref="true" />
+            </member>
+          </overrides>
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.GetValue(System.Windows.DependencyProperty)">
+          <apidata name="GetValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.SetValue(System.Windows.DependencyProperty,System.Object)">
+          <apidata name="SetValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+            <parameter name="value">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.SetValue(System.Windows.DependencyPropertyKey,System.Object)">
+          <apidata name="SetValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="key">
+              <type api="T:System.Windows.DependencyPropertyKey" ref="true" />
+            </parameter>
+            <parameter name="value">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.ClearValue(System.Windows.DependencyProperty)">
+          <apidata name="ClearValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.ClearValue(System.Windows.DependencyPropertyKey)">
+          <apidata name="ClearValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="key">
+              <type api="T:System.Windows.DependencyPropertyKey" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.CoerceValue(System.Windows.DependencyProperty)">
+          <apidata name="CoerceValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.InvalidateProperty(System.Windows.DependencyProperty)">
+          <apidata name="InvalidateProperty" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.ShouldSerializeProperty(System.Windows.DependencyProperty)">
+          <apidata name="ShouldSerializeProperty" group="member" subgroup="method" />
+          <memberdata visibility="family or assembly" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.ReadLocalValue(System.Windows.DependencyProperty)">
+          <apidata name="ReadLocalValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.GetLocalValueEnumerator">
+          <apidata name="GetLocalValueEnumerator" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.LocalValueEnumerator" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.DependencyObject.DependencyObjectType">
+          <apidata name="DependencyObjectType" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" />
+          <getter name="get_DependencyObjectType" />
+          <returns>
+            <type api="T:System.Windows.DependencyObjectType" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.DependencyObject.IsSealed">
+          <apidata name="IsSealed" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" />
+          <getter name="get_IsSealed" />
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Threading.DispatcherObject.CheckAccess">
+          <apidata name="CheckAccess" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Threading" />
+            <type api="T:System.Windows.Threading.DispatcherObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Threading.DispatcherObject.VerifyAccess">
+          <apidata name="VerifyAccess" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Threading" />
+            <type api="T:System.Windows.Threading.DispatcherObject" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Threading.DispatcherObject.Dispatcher">
+          <apidata name="Dispatcher" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" />
+          <getter name="get_Dispatcher" />
+          <returns>
+            <type api="T:System.Windows.Threading.Dispatcher" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Threading" />
+            <type api="T:System.Windows.Threading.DispatcherObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+      </containers>
+    </api>
+    <api id="M:nCodeFxLib.DesaturationEffect.#ctor">
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.DesaturationEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="P:nCodeFxLib.DesaturationEffect.Desaturation">
+      <apidata name="Desaturation" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Desaturation" />
+      <setter name="set_Desaturation" />
+      <returns>
+        <type api="T:System.Single" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.DesaturationEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="F:nCodeFxLib.DesaturationEffect.DesaturationProperty">
+      <apidata name="DesaturationProperty" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="false" initonly="true" serialized="true" />
+      <returns>
+        <type api="T:System.Windows.DependencyProperty" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.DesaturationEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="P:nCodeFxLib.DesaturationEffect.IgnoredOpacityValue">
+      <apidata name="IgnoredOpacityValue" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_IgnoredOpacityValue" />
+      <setter name="set_IgnoredOpacityValue" />
+      <returns>
+        <type api="T:System.Single" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.DesaturationEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="F:nCodeFxLib.DesaturationEffect.IgnoredOpacityValueProperty">
+      <apidata name="IgnoredOpacityValueProperty" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="false" initonly="true" serialized="true" />
+      <returns>
+        <type api="T:System.Windows.DependencyProperty" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.DesaturationEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="P:nCodeFxLib.DesaturationEffect.IgnoreOpacity">
+      <apidata name="IgnoreOpacity" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_IgnoreOpacity" />
+      <setter name="set_IgnoreOpacity" />
+      <returns>
+        <type api="T:System.Single" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.DesaturationEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="F:nCodeFxLib.DesaturationEffect.IgnoreOpacityProperty">
+      <apidata name="IgnoreOpacityProperty" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="false" initonly="true" serialized="true" />
+      <returns>
+        <type api="T:System.Windows.DependencyProperty" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.DesaturationEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="P:nCodeFxLib.DesaturationEffect.Input">
+      <apidata name="Input" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Input" />
+      <setter name="set_Input" />
+      <returns>
+        <type api="T:System.Windows.Media.Brush" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.DesaturationEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="F:nCodeFxLib.DesaturationEffect.InputProperty">
+      <apidata name="InputProperty" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="false" initonly="true" serialized="true" />
+      <returns>
+        <type api="T:System.Windows.DependencyProperty" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.DesaturationEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="T:nCodeFxLib.ShadeEffect">
+      <apidata name="ShadeEffect" group="type" subgroup="class" />
+      <typedata visibility="public" serializable="false" layout="auto" format="ansi" />
+      <family>
+        <ancestors>
+          <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          <type api="T:System.Windows.Media.Effects.Effect" ref="true" />
+          <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          <type api="T:System.Windows.Freezable" ref="true" />
+          <type api="T:System.Windows.DependencyObject" ref="true" />
+          <type api="T:System.Windows.Threading.DispatcherObject" ref="true" />
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="F:nCodeFxLib.ShadeEffect.InputProperty" />
+        <element api="F:nCodeFxLib.ShadeEffect.ShadeProperty" />
+        <element api="F:nCodeFxLib.ShadeEffect.IgnoreOpacityProperty" />
+        <element api="F:nCodeFxLib.ShadeEffect.IgnoredOpacityValueProperty" />
+        <element api="M:nCodeFxLib.ShadeEffect.#ctor" />
+        <element api="P:nCodeFxLib.ShadeEffect.Input" />
+        <element api="P:nCodeFxLib.ShadeEffect.Shade" />
+        <element api="P:nCodeFxLib.ShadeEffect.IgnoreOpacity" />
+        <element api="P:nCodeFxLib.ShadeEffect.IgnoredOpacityValue" />
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.UpdateShaderValue(System.Windows.DependencyProperty)">
+          <apidata name="UpdateShaderValue" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.CloneCore(System.Windows.Freezable)">
+          <apidata name="CloneCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.CloneCore(System.Windows.Freezable)">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="sourceFreezable">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.CloneCurrentValueCore(System.Windows.Freezable)">
+          <apidata name="CloneCurrentValueCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.CloneCurrentValueCore(System.Windows.Freezable)">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="sourceFreezable">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.GetAsFrozenCore(System.Windows.Freezable)">
+          <apidata name="GetAsFrozenCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.GetAsFrozenCore(System.Windows.Freezable)">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="sourceFreezable">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.GetCurrentValueAsFrozenCore(System.Windows.Freezable)">
+          <apidata name="GetCurrentValueAsFrozenCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.GetCurrentValueAsFrozenCore(System.Windows.Freezable)">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="sourceFreezable">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.Clone">
+          <apidata name="Clone" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.CloneCurrentValue">
+          <apidata name="CloneCurrentValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Effects.ShaderEffect.CreateInstanceCore">
+          <apidata name="CreateInstanceCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.CreateInstanceCore">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <returns>
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.PaddingTop">
+          <apidata name="PaddingTop" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_PaddingTop" />
+          <setter name="set_PaddingTop" />
+          <returns>
+            <type api="T:System.Double" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.PaddingBottom">
+          <apidata name="PaddingBottom" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_PaddingBottom" />
+          <setter name="set_PaddingBottom" />
+          <returns>
+            <type api="T:System.Double" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.PaddingLeft">
+          <apidata name="PaddingLeft" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_PaddingLeft" />
+          <setter name="set_PaddingLeft" />
+          <returns>
+            <type api="T:System.Double" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.PaddingRight">
+          <apidata name="PaddingRight" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_PaddingRight" />
+          <setter name="set_PaddingRight" />
+          <returns>
+            <type api="T:System.Double" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.DdxUvDdyUvRegisterIndex">
+          <apidata name="DdxUvDdyUvRegisterIndex" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_DdxUvDdyUvRegisterIndex" />
+          <setter name="set_DdxUvDdyUvRegisterIndex" />
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.ShaderEffect.PixelShader">
+          <apidata name="PixelShader" group="member" subgroup="property" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" set="true" />
+          <getter name="get_PixelShader" />
+          <setter name="set_PixelShader" />
+          <returns>
+            <type api="T:System.Windows.Media.Effects.PixelShader" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.ShaderEffect" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Effects.Effect.EffectMapping">
+          <apidata name="EffectMapping" group="member" subgroup="property" />
+          <memberdata visibility="family or assembly" />
+          <proceduredata virtual="true" />
+          <propertydata get="true" />
+          <getter name="get_EffectMapping" />
+          <returns>
+            <type api="T:System.Windows.Media.GeneralTransform" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Effects" />
+            <type api="T:System.Windows.Media.Effects.Effect" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.FreezeCore(System.Boolean)">
+          <apidata name="FreezeCore" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.Freezable.FreezeCore(System.Boolean)">
+              <type api="T:System.Windows.Freezable" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="isChecking">
+              <type api="T:System.Boolean" ref="false" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock)">
+          <apidata name="ApplyAnimationClock" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+            <parameter name="clock">
+              <type api="T:System.Windows.Media.Animation.AnimationClock" ref="true" />
+            </parameter>
+          </parameters>
+          <implements>
+            <member api="M:System.Windows.Media.Animation.IAnimatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock)">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock,System.Windows.Media.Animation.HandoffBehavior)">
+          <apidata name="ApplyAnimationClock" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+            <parameter name="clock">
+              <type api="T:System.Windows.Media.Animation.AnimationClock" ref="true" />
+            </parameter>
+            <parameter name="handoffBehavior">
+              <type api="T:System.Windows.Media.Animation.HandoffBehavior" ref="false" />
+            </parameter>
+          </parameters>
+          <implements>
+            <member api="M:System.Windows.Media.Animation.IAnimatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock,System.Windows.Media.Animation.HandoffBehavior)">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline)">
+          <apidata name="BeginAnimation" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+            <parameter name="animation">
+              <type api="T:System.Windows.Media.Animation.AnimationTimeline" ref="true" />
+            </parameter>
+          </parameters>
+          <implements>
+            <member api="M:System.Windows.Media.Animation.IAnimatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline)">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline,System.Windows.Media.Animation.HandoffBehavior)">
+          <apidata name="BeginAnimation" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+            <parameter name="animation">
+              <type api="T:System.Windows.Media.Animation.AnimationTimeline" ref="true" />
+            </parameter>
+            <parameter name="handoffBehavior">
+              <type api="T:System.Windows.Media.Animation.HandoffBehavior" ref="false" />
+            </parameter>
+          </parameters>
+          <implements>
+            <member api="M:System.Windows.Media.Animation.IAnimatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline,System.Windows.Media.Animation.HandoffBehavior)">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Media.Animation.Animatable.GetAnimationBaseValue(System.Windows.DependencyProperty)">
+          <apidata name="GetAnimationBaseValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <implements>
+            <member api="M:System.Windows.Media.Animation.IAnimatable.GetAnimationBaseValue(System.Windows.DependencyProperty)">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Media.Animation.Animatable.HasAnimatedProperties">
+          <apidata name="HasAnimatedProperties" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <propertydata get="true" />
+          <getter name="get_HasAnimatedProperties" />
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <implements>
+            <member api="P:System.Windows.Media.Animation.IAnimatable.HasAnimatedProperties">
+              <type api="T:System.Windows.Media.Animation.IAnimatable" ref="true" />
+            </member>
+          </implements>
+          <containers>
+            <library assembly="PresentationCore" module="PresentationCore" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Media.Animation" />
+            <type api="T:System.Windows.Media.Animation.Animatable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.GetAsFrozen">
+          <apidata name="GetAsFrozen" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.GetCurrentValueAsFrozen">
+          <apidata name="GetCurrentValueAsFrozen" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.Freeze">
+          <apidata name="Freeze" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+          <apidata name="OnPropertyChanged" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <overrides>
+            <member api="M:System.Windows.DependencyObject.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+              <type api="T:System.Windows.DependencyObject" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="e">
+              <type api="T:System.Windows.DependencyPropertyChangedEventArgs" ref="false" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.CreateInstance">
+          <apidata name="CreateInstance" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.OnChanged">
+          <apidata name="OnChanged" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.ReadPreamble">
+          <apidata name="ReadPreamble" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.WritePreamble">
+          <apidata name="WritePreamble" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.WritePostscript">
+          <apidata name="WritePostscript" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.OnFreezablePropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyObject)">
+          <apidata name="OnFreezablePropertyChanged" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="oldValue">
+              <type api="T:System.Windows.DependencyObject" ref="true" />
+            </parameter>
+            <parameter name="newValue">
+              <type api="T:System.Windows.DependencyObject" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Freezable.OnFreezablePropertyChanged(System.Windows.DependencyObject,System.Windows.DependencyObject,System.Windows.DependencyProperty)">
+          <apidata name="OnFreezablePropertyChanged" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="oldValue">
+              <type api="T:System.Windows.DependencyObject" ref="true" />
+            </parameter>
+            <parameter name="newValue">
+              <type api="T:System.Windows.DependencyObject" ref="true" />
+            </parameter>
+            <parameter name="property">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Freezable.CanFreeze">
+          <apidata name="CanFreeze" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" />
+          <getter name="get_CanFreeze" />
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Freezable.IsFrozen">
+          <apidata name="IsFrozen" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" />
+          <getter name="get_IsFrozen" />
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="E:System.Windows.Freezable.Changed">
+          <apidata name="Changed" group="member" subgroup="event" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <eventdata add="true" remove="true" />
+          <adder name="add_Changed" />
+          <remover name="remove_Changed" />
+          <eventhandler>
+            <type api="T:System.EventHandler" ref="true" />
+          </eventhandler>
+          <eventargs>
+            <type api="T:System.EventArgs" ref="true" />
+          </eventargs>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.Freezable" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.Equals(System.Object)">
+          <apidata name="Equals" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <overrides>
+            <member api="M:System.Object.Equals(System.Object)">
+              <type api="T:System.Object" ref="true" />
+            </member>
+          </overrides>
+          <parameters>
+            <parameter name="obj">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.GetHashCode">
+          <apidata name="GetHashCode" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" final="true" />
+          <overrides>
+            <member api="M:System.Object.GetHashCode">
+              <type api="T:System.Object" ref="true" />
+            </member>
+          </overrides>
+          <returns>
+            <type api="T:System.Int32" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.GetValue(System.Windows.DependencyProperty)">
+          <apidata name="GetValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.SetValue(System.Windows.DependencyProperty,System.Object)">
+          <apidata name="SetValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+            <parameter name="value">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.SetValue(System.Windows.DependencyPropertyKey,System.Object)">
+          <apidata name="SetValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="key">
+              <type api="T:System.Windows.DependencyPropertyKey" ref="true" />
+            </parameter>
+            <parameter name="value">
+              <type api="T:System.Object" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.ClearValue(System.Windows.DependencyProperty)">
+          <apidata name="ClearValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.ClearValue(System.Windows.DependencyPropertyKey)">
+          <apidata name="ClearValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="key">
+              <type api="T:System.Windows.DependencyPropertyKey" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.CoerceValue(System.Windows.DependencyProperty)">
+          <apidata name="CoerceValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.InvalidateProperty(System.Windows.DependencyProperty)">
+          <apidata name="InvalidateProperty" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.ShouldSerializeProperty(System.Windows.DependencyProperty)">
+          <apidata name="ShouldSerializeProperty" group="member" subgroup="method" />
+          <memberdata visibility="family or assembly" />
+          <proceduredata virtual="true" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.ReadLocalValue(System.Windows.DependencyProperty)">
+          <apidata name="ReadLocalValue" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <parameters>
+            <parameter name="dp">
+              <type api="T:System.Windows.DependencyProperty" ref="true" />
+            </parameter>
+          </parameters>
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.DependencyObject.GetLocalValueEnumerator">
+          <apidata name="GetLocalValueEnumerator" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Windows.LocalValueEnumerator" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.DependencyObject.DependencyObjectType">
+          <apidata name="DependencyObjectType" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" />
+          <getter name="get_DependencyObjectType" />
+          <returns>
+            <type api="T:System.Windows.DependencyObjectType" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.DependencyObject.IsSealed">
+          <apidata name="IsSealed" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" />
+          <getter name="get_IsSealed" />
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows" />
+            <type api="T:System.Windows.DependencyObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Threading.DispatcherObject.CheckAccess">
+          <apidata name="CheckAccess" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Boolean" ref="false" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Threading" />
+            <type api="T:System.Windows.Threading.DispatcherObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Windows.Threading.DispatcherObject.VerifyAccess">
+          <apidata name="VerifyAccess" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Threading" />
+            <type api="T:System.Windows.Threading.DispatcherObject" ref="true" />
+          </containers>
+        </element>
+        <element api="P:System.Windows.Threading.DispatcherObject.Dispatcher">
+          <apidata name="Dispatcher" group="member" subgroup="property" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <propertydata get="true" />
+          <getter name="get_Dispatcher" />
+          <returns>
+            <type api="T:System.Windows.Threading.Dispatcher" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="WindowsBase" module="WindowsBase" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System.Windows.Threading" />
+            <type api="T:System.Windows.Threading.DispatcherObject" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.ToString">
+          <apidata name="ToString" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="true" />
+          <returns>
+            <type api="T:System.String" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.GetType">
+          <apidata name="GetType" group="member" subgroup="method" />
+          <memberdata visibility="public" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Type" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.Finalize">
+          <apidata name="Finalize" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="true" />
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+        <element api="M:System.Object.MemberwiseClone">
+          <apidata name="MemberwiseClone" group="member" subgroup="method" />
+          <memberdata visibility="family" />
+          <proceduredata virtual="false" />
+          <returns>
+            <type api="T:System.Object" ref="true" />
+          </returns>
+          <containers>
+            <library assembly="mscorlib" module="mscorlib" kind="DynamicallyLinkedLibrary" />
+            <namespace api="N:System" />
+            <type api="T:System.Object" ref="true" />
+          </containers>
+        </element>
+      </elements>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+      </containers>
+    </api>
+    <api id="M:nCodeFxLib.ShadeEffect.#ctor">
+      <apidata name=".ctor" group="member" subgroup="constructor" />
+      <memberdata visibility="public" special="true" />
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ShadeEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="P:nCodeFxLib.ShadeEffect.IgnoredOpacityValue">
+      <apidata name="IgnoredOpacityValue" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_IgnoredOpacityValue" />
+      <setter name="set_IgnoredOpacityValue" />
+      <returns>
+        <type api="T:System.Single" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ShadeEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="F:nCodeFxLib.ShadeEffect.IgnoredOpacityValueProperty">
+      <apidata name="IgnoredOpacityValueProperty" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="false" initonly="true" serialized="true" />
+      <returns>
+        <type api="T:System.Windows.DependencyProperty" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ShadeEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="P:nCodeFxLib.ShadeEffect.IgnoreOpacity">
+      <apidata name="IgnoreOpacity" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_IgnoreOpacity" />
+      <setter name="set_IgnoreOpacity" />
+      <returns>
+        <type api="T:System.Single" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ShadeEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="F:nCodeFxLib.ShadeEffect.IgnoreOpacityProperty">
+      <apidata name="IgnoreOpacityProperty" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="false" initonly="true" serialized="true" />
+      <returns>
+        <type api="T:System.Windows.DependencyProperty" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ShadeEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="P:nCodeFxLib.ShadeEffect.Input">
+      <apidata name="Input" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Input" />
+      <setter name="set_Input" />
+      <returns>
+        <type api="T:System.Windows.Media.Brush" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ShadeEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="F:nCodeFxLib.ShadeEffect.InputProperty">
+      <apidata name="InputProperty" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="false" initonly="true" serialized="true" />
+      <returns>
+        <type api="T:System.Windows.DependencyProperty" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ShadeEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="P:nCodeFxLib.ShadeEffect.Shade">
+      <apidata name="Shade" group="member" subgroup="property" />
+      <memberdata visibility="public" />
+      <proceduredata virtual="false" />
+      <propertydata get="true" set="true" />
+      <getter name="get_Shade" />
+      <setter name="set_Shade" />
+      <returns>
+        <type api="T:System.Single" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ShadeEffect" ref="true" />
+      </containers>
+    </api>
+    <api id="F:nCodeFxLib.ShadeEffect.ShadeProperty">
+      <apidata name="ShadeProperty" group="member" subgroup="field" />
+      <memberdata visibility="public" static="true" />
+      <fielddata literal="false" initonly="true" serialized="true" />
+      <returns>
+        <type api="T:System.Windows.DependencyProperty" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="nCodeFxLib" module="nCodeFxLib" kind="DynamicallyLinkedLibrary" />
+        <namespace api="N:nCodeFxLib" />
+        <type api="T:nCodeFxLib.ShadeEffect" ref="true" />
+      </containers>
+    </api>
+  </apis>
+</reflection>

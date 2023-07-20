@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/dev/!svn/ver/75/Active/nCodeFx/nCodeFxLib
+END
+ColorizeEffect.fx
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/dev/!svn/ver/27/Active/nCodeFx/nCodeFxLib/ColorizeEffect.fx
+END
+DesaturationEffect.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/dev/!svn/ver/62/Active/nCodeFx/nCodeFxLib/DesaturationEffect.cs
+END
+EffectLibrary.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dev/!svn/ver/68/Active/nCodeFx/nCodeFxLib/EffectLibrary.cs
+END
+ShadeEffect.cs
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dev/!svn/ver/62/Active/nCodeFx/nCodeFxLib/ShadeEffect.cs
+END
+ColorizeEffect.cs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/dev/!svn/ver/57/Active/nCodeFx/nCodeFxLib/ColorizeEffect.cs
+END
+ColourHelper.cs
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/dev/!svn/ver/62/Active/nCodeFx/nCodeFxLib/ColourHelper.cs
+END
+nCodeFxLib.dll
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dev/!svn/ver/75/Active/nCodeFx/nCodeFxLib/nCodeFxLib.dll
+END
+DesaturationEffect.fx
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/dev/!svn/ver/62/Active/nCodeFx/nCodeFxLib/DesaturationEffect.fx
+END
+nCodeFxLib.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/dev/!svn/ver/75/Active/nCodeFx/nCodeFxLib/nCodeFxLib.csproj
+END
+ShadeEffect.fx
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dev/!svn/ver/62/Active/nCodeFx/nCodeFxLib/ShadeEffect.fx
+END

@@ -1,0 +1,24 @@
+﻿<Window x:Class="DesaturationSample1.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:nCodeFxLib="clr-namespace:nCodeFxLib;assembly=nCodeFxLib"
+    Title="Window1" Width="320" Height="400">
+    <Grid>
+        <Border BorderBrush="AliceBlue" BorderThickness="3" CornerRadius="4" Margin="4" Padding="4">
+            <StackPanel>
+                <StackPanel Margin="0,0,0,16">
+                    <DockPanel>
+                        <TextBlock>Desaturation</TextBlock>
+                    </DockPanel>
+                    <Slider HorizontalAlignment="Stretch" x:Name="desaturationAmount" Minimum="0" Maximum="1.0" SmallChange="0.00390625"  LargeChange="0.01953125"></Slider>
+                </StackPanel>
+                <Image Source="SMILE.png">
+                    <Image.Effect>
+                        <nCodeFxLib:DesaturationEffect Desaturation="{Binding ElementName=desaturationAmount,Path=Value}"></nCodeFxLib:DesaturationEffect>
+                    </Image.Effect>
+                </Image>
+            </StackPanel>
+
+        </Border>
+    </Grid>
+</Window>

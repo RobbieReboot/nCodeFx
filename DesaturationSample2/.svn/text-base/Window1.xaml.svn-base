@@ -1,0 +1,30 @@
+﻿<Window x:Class="DesaturationSample2.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:nCodeFxLib="clr-namespace:nCodeFxLib;assembly=nCodeFxLib"
+    Title="Desaturation Sample 2" Height="510" Width="390" x:Name="window"
+    Background="LightGray">
+    <Grid>
+        <Border Margin="4" Padding="4" BorderBrush="Blue" BorderThickness="4" CornerRadius="4">
+            <Border.Effect>
+                <nCodeFxLib:DesaturationEffect x:Name="desaturationEffect" IgnoreOpacity="0.995"></nCodeFxLib:DesaturationEffect>
+            </Border.Effect>
+            <StackPanel>
+                <Button Foreground="Yellow" Background="Firebrick">A Button</Button>
+                <ComboBox Foreground="DarkGreen" Background="Aquamarine" SelectedIndex="0">
+                    <ComboBoxItem>Item1</ComboBoxItem>
+                    <ComboBoxItem>Item2</ComboBoxItem>
+                    <ComboBoxItem>Item3</ComboBoxItem>
+                </ComboBox>
+                <Image Source="SMILE.png"></Image>
+                <Border BorderBrush="Blue" BorderThickness="4" CornerRadius="6" Background="LightSeaGreen">
+                    <TextBlock x:Name="activationState" HorizontalAlignment="Center" FontSize="32" Foreground="Red">
+                        <TextBlock.Effect>
+                            <DropShadowEffect></DropShadowEffect>
+                        </TextBlock.Effect>
+                    </TextBlock>
+                </Border>
+            </StackPanel>
+        </Border>            
+    </Grid>
+</Window>

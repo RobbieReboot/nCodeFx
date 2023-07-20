@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>nCodeFxLib</name>
+    </assembly>
+    <members>
+        <member name="T:nCodeFxLib.ColorHelper">
+            <summary>
+            Provides an IEnumerable for the Colour Names in the Windows.Media Namespace.
+            </summary>
+            <remarks>This class allows you to create an ObjectDataProvider for binding controls to the colour names 
+            <example>
+            <code>
+            &lt;Window.Resources&gt;
+                &lt;ObjectDataProvider x:Key="colors"
+                       ObjectType="{x:Type nCodeFxLib:ColorHelper}"
+                       MethodName="GetColorNames"/&gt;
+            &lt;/Window.Resource&gt;
+            </code>
+            
+            Then bind to the ObjectDataProvider in an appropriate ItemsControl, eg a ComboBox.
+            
+            <code>
+                &lt;ComboBox x:Name="colorChoice" VerticalAlignment="Center"
+                    ItemsSource="{Binding Mode=OneWay, Source={StaticResource colors}}" SelectedIndex="0"&gt;
+                    &lt;ComboBox.ItemTemplate&gt;
+                        &lt;DataTemplate&gt;
+                            &lt;StackPanel Margin="1" Orientation="Horizontal" &gt;
+                                &lt;Rectangle Fill="{Binding}" Height="16" Width="16"
+                                    Margin="2"/&gt;
+                                &lt;TextBlock Text="{Binding}" VerticalAlignment="Center" Margin="2 0 0 0"/&gt;
+                            &lt;/StackPanel&gt;
+                        &lt;/DataTemplate&gt;
+                    &lt;/ComboBox.ItemTemplate&gt;
+                &lt;/ComboBox&gt;
+            </code>
+            
+            </example>
+            
+            </remarks>
+        </member>
+        <member name="M:nCodeFxLib.ColorHelper.GetColorNames">
+            <summary>
+            Provides an IEnumerable for easy Binding of colour names in XAML
+            </summary>
+            <returns>an IEnumerable for the colour names in Windows.Media.Colours</returns>
+        </member>
+        <member name="T:nCodeFxLib.ShadeEffect">
+            <summary>
+            Creates new shades from the current on screen skin.
+            </summary>
+        </member>
+        <member name="M:nCodeFxLib.ShadeEffect.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:nCodeFxLib.ShadeEffect" /> class.
+            </summary>
+        </member>
+        <member name="F:nCodeFxLib.ShadeEffect.InputProperty">
+            <summary>
+            The dependency property for the Implicit input to the bitmap effect.
+            </summary>
+            <remarks>this is automatically passed by the framwork and doesn't need to be set explicitly.</remarks>
+        </member>
+        <member name="F:nCodeFxLib.ShadeEffect.ShadeProperty">
+            <summary>
+            The Shade Dependency property
+            </summary>
+            <remarks>You can bind to the dependency property from within XAML or use the <see cref="P:nCodeFxLib.ShadeEffect.Shade" /> property from code behind files.</remarks>
+        </member>
+        <member name="F:nCodeFxLib.ShadeEffect.IgnoreOpacityProperty">
+            <summary>
+            Dependency Property for the IgnoreOpacity property.
+            </summary>
+            <remarks>IgnoreOpacity dependency property means you can bind to this property within your XAML code.</remarks>
+        </member>
+        <member name="F:nCodeFxLib.ShadeEffect.IgnoredOpacityValueProperty">
+            <summary>
+            Dependcency Property for the IgnoredOpacityValue.
+            </summary>
+        </member>
+        <member name="P:nCodeFxLib.ShadeEffect.Input">
+            <summary>
+            The property for the Implicit input to the bitmap effect.
+            </summary>
+            <remarks>this is automatically passed by the framwork and doesn't need to be set explicitly.</remarks>
+        </member>
+        <member name="P:nCodeFxLib.ShadeEffect.Shade">
+            <summary>
+            Gets or sets the shade.
+            </summary>
+            <value>The shade.</value>
+        </member>
+        <member name="P:nCodeFxLib.ShadeEffect.IgnoreOpacity">
+            <summary>
+            Gets or sets the value representing an opacity value to ignore when desaturating.
+            </summary>
+            <remarks>This value allows the setting of any element within the effects visual tree to be excluded from the desaturation operation.
+            Coupled with the IgnoredOpacityValue which represents that elements REAL opacity value, you can desaturate elements but
+            still maintain the flexibilty to set the ignored items opacity values.</remarks>
+            <value>By Default the Ignore Opacity is set to 0.0 which turn off this feature. Any other value will cause the desaturate effect to exclude pixels 
+            with this Opacity value.</value>
+        </member>
+        <member name="P:nCodeFxLib.ShadeEffect.IgnoredOpacityValue">
+            <summary>
+            Gets or sets the ignored opacity value.
+            </summary>
+            <remarks>This represents the actual opacity a pixel will be set to if it was ignored by the effect. Since the only way we can exclude an item from the
+            Colorizing effect is to set a known 'sentinel' opacity value which the effect can then ignore, we need someway of still being able to set this elements 
+            opacity values. The IgnoredOpacityValue is the opacity the effect will use when it comes across a pixel with the Ignored Opacity. Note that the
+            IgnoredOpacityValue can only ever reach the maximum set by the elements Real Opacity. If the elements Opactity is set to "0.7" then a value of "1.0" for
+            the IgnoredOpacityValue will translate to the 0.7 of the actual opacity. The largest sentinel value settable for the Opacity to be ignored is 0.995</remarks>
+        </member>
+        <member name="T:nCodeFxLib.ColorizeEffect">
+            <summary>
+            Colorize Effect.
+            </summary>
+            <remarks>The Colorize effect changes all the colours to match the Color property. Each pixels
+            liminance value is used to determine the overall value of the resulting pixel, so a luminance value of
+            white will return the full intensity of the Colour Parameter. 
+            <example><code>
+            &lt;StackPanel Orientation="Vertical"&gt;
+                &lt;StackPanel.Effect&gt;
+                &lt;nCodeFxLib:ColorizeEffect Color="BlanchedAlmond"/&gt;
+                &lt;/StackPanel.Effect&gt;
+                &lt;!--All UIElements in this stack panel will now be recoloured to BlanchedAlmond--&gt;
+            &lt;/StackPanel&gt;
+            </code></example>
+            
+            <example><code>
+            &lt;StackPanel Orientation="Vertical"&gt;
+                &lt;StackPanel.Effect&gt;
+                &lt;nCodeFxLib:ColorizeEffect Color="BlanhedAlmond" IgnoreOpacity="0.995"/&gt;
+                &lt;/StackPanel.Effect&gt;
+                &lt;!--All UIElements in this stack panel will be recoloured to BlanchedAlmond--&gt;
+                &lt;!--Except for this button                                                 --&gt;
+                &lt;Button Opacity="0.995"&gt;A button excluded from the effect&lt;/Button&gt;
+            &lt;/StackPanel&gt;
+            </code></example>
+            </remarks>
+        </member>
+        <member name="M:nCodeFxLib.ColorizeEffect.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:nCodeFxLib.ColorizeEffect" /> class.
+            </summary>
+            <remarks>All properties are set to defaults of :
+            Color = "White",
+            IgnoreOpacity = "0.0" ( disabled ),
+            IgnoredOpacityValue = "1.0" ( full opacity after the effect is applied)
+            </remarks>
+        </member>
+        <member name="F:nCodeFxLib.ColorizeEffect.InputProperty">
+            <summary>
+            The dependency property for the Implicit input to the bitmap effect.
+            </summary>
+            <remarks>this is automatically passed by the framwork and doesn't need to be set explicitly.</remarks>
+        </member>
+        <member name="F:nCodeFxLib.ColorizeEffect.ColorProperty">
+            <summary>
+            The Dependency property representing the Color Property.
+            </summary>
+            <remarks>The dependency property means you can set bindings in your XAML to the colour property.</remarks>
+        </member>
+        <member name="F:nCodeFxLib.ColorizeEffect.IgnoreOpacityProperty">
+            <summary>
+            Dependency Property for the IgnoreOpacity property.
+            </summary>
+            <remarks>IgnoreOpacity dependency property means you can bind to this property within your XAML code.</remarks>
+        </member>
+        <member name="F:nCodeFxLib.ColorizeEffect.IgnoredOpacityValueProperty">
+            <summary>
+            Dependcency Property for the IgnoredOpacityValue.
+            </summary>
+        </member>
+        <member name="P:nCodeFxLib.ColorizeEffect.Input">
+            <summary>
+            Gets or sets the input.
+            </summary>
+            <value>The implicit imput property for the. This is automatically passed by the framework and shouldn't be set in your code.</value>
+        </member>
+        <member name="P:nCodeFxLib.ColorizeEffect.Color">
+            <summary>
+            Gets or sets the color which will be used to colorize the visual element the effect is applied to.
+            </summary>
+            <remarks>Any colour value can be passed, however some will work better than others. Typically the darker colours will produce variable results.
+            Most light colours will produce pleasing results. When using the IgnoreOpacity feature to allow, for example, the text on buttons to remain
+            uncoloured, using darker colours will show up the text's anti aliased outline making the text look unsightly. This artifacting doesn't show up on
+            lighter colours.
+            Colours can be set from the <see cref="P:nCodeFxLib.ColorizeEffect.Color" /> class, or can be set directly with the Hex colour format eg. "#FF34E023". If you're using the 
+            IgnoreOpacity feature, using the Hex colour value will allow passing the opacity value to ignore. </remarks>
+        </member>
+        <member name="P:nCodeFxLib.ColorizeEffect.IgnoreOpacity">
+            <summary>
+            Gets or sets the value representing an opacity value to ignore when colorizing.
+            </summary>
+            <remarks>This value allows the setting of any element within the pixel shaders influence to be excluded from the shading operation.
+            Coupled with the IgnoredOpacityValue which represents that elements REAL opacity value, you can colourize the interface ignoring elements but
+            still maintain the flexibilty to set the ignored items opacity values.</remarks>
+            <value>By Default the Ignore Opacity is set to 0.0 which turn off this feature. Any other value will cause the colorize effect to exclude pixels 
+            with this Opacity value.</value>
+        </member>
+        <member name="P:nCodeFxLib.ColorizeEffect.IgnoredOpacityValue">
+            <summary>
+            Gets or sets the ignored opacity value.
+            </summary>
+            <remarks>This represents the actual opacity a pixel will be set to if it was ignored by the pixel shader. Since the only way we can exclude an item from the
+            Colorizing effect is to set a known 'sentinel' alpha value which the colorize effect can then ignore, we need someway of still being able to set this elements 
+            opacity values. The IgnoredOpacityValue </remarks>
+        </member>
+        <member name="T:nCodeFxLib.DesaturationEffect">
+            <summary>
+            Desaturates the attached visual element
+            </summary>
+            <remarks>
+            Desaturates a visual element according to the desaturation paramter, where 0.0 (default) is
+            saturated (i.e. untouched) and 1.0 represents full desaturation.
+            </remarks>
+        </member>
+        <member name="M:nCodeFxLib.DesaturationEffect.#cctor">
+            <summary>
+            Initializes the <see cref="T:nCodeFxLib.DesaturationEffect" /> class.
+            </summary>
+        </member>
+        <member name="M:nCodeFxLib.DesaturationEffect.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:nCodeFxLib.DesaturationEffect" /> class.
+            </summary>
+        </member>
+        <member name="F:nCodeFxLib.DesaturationEffect.InputProperty">
+            <summary>
+            The dependency property for the Implicit input to the bitmap effect.
+            </summary>
+            <remarks>this is automatically passed by the framwork and doesn't need to be set explicitly.</remarks>        
+        </member>
+        <member name="F:nCodeFxLib.DesaturationEffect.DesaturationProperty">
+            <summary>
+            The DependencyProperty for setting the Desaturation
+            </summary>
+        </member>
+        <member name="F:nCodeFxLib.DesaturationEffect.IgnoreOpacityProperty">
+            <summary>
+            Dependency Property for the IgnoreOpacity property.
+            </summary>
+            <remarks>IgnoreOpacity dependency property means you can bind to this property within your XAML code.</remarks>
+        </member>
+        <member name="F:nCodeFxLib.DesaturationEffect.IgnoredOpacityValueProperty">
+            <summary>
+            Dependcency Property for the IgnoredOpacityValue.
+            </summary>
+        </member>
+        <member name="P:nCodeFxLib.DesaturationEffect.Input">
+            <summary>
+            The property for the Implicit input to the bitmap effect.
+            </summary>
+            <remarks>this is automatically passed by the framework and doesn't need to be set explicitly.</remarks>
+        </member>
+        <member name="P:nCodeFxLib.DesaturationEffect.Desaturation">
+            <summary>
+            Gets or sets the desaturation.
+            </summary>
+            <value>The desaturation amount that the element will desaturate by. 0.0 is the default which represents no desaturation, whereas 1.0 represents 
+            full desaturation.</value>
+        </member>
+        <member name="P:nCodeFxLib.DesaturationEffect.IgnoreOpacity">
+            <summary>
+            Gets or sets the value representing an opacity value to ignore when desaturating.
+            </summary>
+            <remarks>This value allows the setting of any element within the effects visual tree to be excluded from the desaturation operation.
+            Coupled with the IgnoredOpacityValue which represents that elements REAL opacity value, you can desaturate elements but
+            still maintain the flexibilty to set the ignored items opacity values.</remarks>
+            <value>By Default the Ignore Opacity is set to 0.0 which turn off this feature. Any other value will cause the desaturate effect to exclude pixels 
+            with this Opacity value.</value>
+        </member>
+        <member name="P:nCodeFxLib.DesaturationEffect.IgnoredOpacityValue">
+            <summary>
+            Gets or sets the ignored opacity value.
+            </summary>
+            <remarks>This represents the actual opacity a pixel will be set to if it was ignored by the effect. Since the only way we can exclude an item from the
+            Colorizing effect is to set a known 'sentinel' opacity value which the effect can then ignore, we need someway of still being able to set this elements 
+            opacity values. The IgnoredOpacityValue is the opacity the effect will use when it comes across a pixel with the Ignored Opacity. Note that the
+            IgnoredOpacityValue can only ever reach the maximum set by the elements Real Opacity. If the elements Opactity is set to "0.7" then a value of "1.0" for
+            the IgnoredOpacityValue will translate to the 0.7 of the actual opacity. The largest sentinel value settable for the Opacity to be ignored is 0.995</remarks>
+        </member>
+    </members>
+</doc>
